@@ -1,0 +1,51 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: green;
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 100px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 5px solid purple;
+    box-shadow: 0 0 5px rgba(26, 0, 222, 0.891);
+}
+
+.cell:hover {
+    background-color: yellow;
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
